@@ -6,14 +6,20 @@
 
 ## Description
 
-_This application ..._
+_This application allows two players to play rock, paper, scissors. Each player selects "rock", "paper", or "scissors" at the same time, and the application returns the result of the game. Rock, paper, scissors has the following rules:_
+* _Rock v. scissors = rock wins_
+* _Rock v. paper = paper wins_
+* _Paper v. scissors = scissors wins_
+* _When both players choose the same object, the game is a draw_
 
 ## Specifications:
 
 | Specification | Example Input | Example Output |
 | ------------- |:-------------:| -------------------:|
-| Application creates an instance of a Game | Game newGame = new Game() | new instance of Game |
-|  |  |  |
+| Application returns that game is a draw if both inputs are the same | game.CheckWin("rock", "rock") | "It's a draw!" |
+| When one input is "rock" and another input is "scissors", the application returns the player who chose rock as the winner | "rock", "scissors" | "Player 1" |
+| When one input is "scissors" and the other input is "paper", the application returns the player who chose scissors as the winner | "scissors", "paper" | "Player 1" |
+| When one input is "rock" and the other input is "paper", the application returns the player who chose paper as the winner | "rock", "paper" | "Player 2" |
 
 ## Setup/Installation Requirements
 
