@@ -1,3 +1,5 @@
+using System;
+
 namespace RPS.Models
 {
   public class Game
@@ -19,6 +21,28 @@ namespace RPS.Models
       else
       {
         throw new System.InvalidOperationException("Invalid input");
+      }
+    }
+
+    public static string GenerateComputerChoice()
+    {
+      Random random = new Random();
+      int randomNumber = random.Next(0, 3);
+      if (randomNumber == 0)
+      {
+        return "rock";
+      }
+      else if (randomNumber == 1)
+      {
+        return "paper";
+      }
+      else if (randomNumber == 2)
+      {
+        return "scissors";
+      }
+      else
+      {
+        return "error";
       }
     }
   }

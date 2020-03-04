@@ -12,6 +12,8 @@ _This application allows two players to play rock, paper, scissors. Each player 
 * _Paper v. scissors = scissors wins_
 * _When both players choose the same object, the game is a draw_
 
+_The application can be used in a two-player mode or a single player mode (playing against the computer)._
+
 ## Specifications:
 
 | Specification | Example Input | Example Output |
@@ -20,6 +22,7 @@ _This application allows two players to play rock, paper, scissors. Each player 
 | When one input is "rock" and another input is "scissors", the application returns the player who chose rock as the winner | "rock", "scissors" | "Player 1" |
 | When one input is "scissors" and the other input is "paper", the application returns the player who chose scissors as the winner | "scissors", "paper" | "Player 1" |
 | When one input is "rock" and the other input is "paper", the application returns the player who chose paper as the winner | "rock", "paper" | "Player 2" |
+| Application randomly selects "rock", "paper", or "scissors" as computer's choice for single-player mode | user selects "rock" | application randomly selects one of "rock", "paper", or "scissors" |
 
 ## Setup/Installation Requirements
 
