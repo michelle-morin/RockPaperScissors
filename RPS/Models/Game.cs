@@ -2,7 +2,7 @@ using System;
 
 namespace RPS.Models
 {
-  public class Game
+  abstract class Game
   {
     public static string CheckWin(string playerOneChoice, string playerTwoChoice)
     {
